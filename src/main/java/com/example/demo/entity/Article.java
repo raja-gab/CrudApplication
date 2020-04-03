@@ -1,8 +1,6 @@
 package com.example.demo.entity;
 
-import java.util.List;
 
-import javax.annotation.Generated;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
@@ -15,11 +13,13 @@ import lombok.Data;
 public class Article {
 	@Id 
 	private String idArt;
+	private String imageName ;
 	private String designtationArt;
 	private String descriptionArt;
 	private  double prixArt;
 	private int qteStockArt;
 	private double tauxRemiseArt;
+
 	@DBRef
 	private Marque marqueArt;
 	@DBRef
@@ -28,6 +28,6 @@ public class Article {
 	private Fournisseur fournisseurArt;
 	@DBRef
 	private Avis avisArt ; 
-	
+
 	
 }
