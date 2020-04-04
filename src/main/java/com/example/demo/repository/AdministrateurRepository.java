@@ -6,7 +6,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import com.example.demo.entity.Administrateur;
 
 
-@RepositoryRestResource(collectionResourceRel = "Administrateurs", path = "admin")
+@RepositoryRestResource
 public interface  AdministrateurRepository extends MongoRepository<Administrateur, String> {
 
 }
