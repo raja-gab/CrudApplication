@@ -45,25 +45,7 @@ public class ArticleController {
                 .contentType(MediaType.IMAGE_JPEG)
                 .body(new InputStreamResource(imgFile.getInputStream()));
     }
-	@GetMapping("/getallarticle")
-	public List<Article> getAll(){
-		return articleRepo.findAll();
-	}
-	
-	
-	@GetMapping("/getproduct/{id}")
-	public Optional<Article> getProdcutById(@PathVariable("id") String id ){
-		return articleRepo.findById(id);
-	}
-	
-	@GetMapping("/getallfour")
-	public List<Fournisseur> getAllFour(){
-		return fourRepo.findAll();
-	}
-	@GetMapping("/getallclient")
-	public List<Client> getAllClient(){
-		return clientRepo.findAll();
-	}
+
 	
 	
 
