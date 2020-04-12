@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.example.demo.entity.Article;
 import com.example.demo.entity.Client;
 import com.example.demo.entity.Fournisseur;
@@ -20,29 +19,26 @@ import com.example.demo.repository.ArticleRepository;
 import com.example.demo.repository.ClientRepository;
 import com.example.demo.repository.FournisseurRepository;
 
-
 import lombok.var;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 
 @RestController
 public class ArticleController {
-
-	@Autowired
-	ArticleRepository articleRepo;
-
-	@Autowired 
-	ClientRepository clientRepository ;
 	
 	@Autowired
-	FournisseurRepository fournisseurRepository ;
+	private FournisseurRepository fourRepo;
+	@Autowired
+	ArticleRepository articleRepo;
+	@Autowired
+	private ClientRepository clientRepo;
+	
 	
 	@RequestMapping(value = "/sid/{imageName}", method = RequestMethod.GET,
             produces = MediaType.IMAGE_JPEG_VALUE)
     public ResponseEntity<InputStreamResource> getImage(@PathVariable("imageName") String imageName) throws IOException {
-
-        var imgFile = new ClassPathResource("static/images/"+imageName+".jpg");
-        return ResponseEntity
+		var imgFile = new ClassPathResource("static/images/"+imageName+".jpg");
+		return ResponseEntity
                 .ok()
                 .contentType(MediaType.IMAGE_JPEG)
                 .body(new InputStreamResource(imgFile.getInputStream()));
@@ -61,16 +57,12 @@ public class ArticleController {
 	
 	@GetMapping("/getallfour")
 	public List<Fournisseur> getAllFour(){
-		return fournisseurRepository.findAll();
+		return fourRepo.findAll();
 	}
 	@GetMapping("/getallclient")
 	public List<Client> getAllClient(){
-		return clientRepository.findAll();
+		return clientRepo.findAll();
 	}
-   
-	
-	
-
 }
 
 

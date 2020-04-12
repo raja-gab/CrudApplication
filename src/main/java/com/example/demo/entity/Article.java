@@ -14,16 +14,12 @@ public class Article {
 	@Id 
 	private String idArt;
 	private String imageName ;
-	
-	
 	private String designtationArt;
 	private String descriptionArt;
 	private  double prixArt;
 	private int qteStockArt;
 	private double tauxRemiseArt;
-	 
-	
-	
+					
 	@DBRef
 	private Marque marqueArt;
 	@DBRef

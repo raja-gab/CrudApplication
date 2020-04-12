@@ -1,5 +1,6 @@
 package com.example.demo.entity;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 import org.springframework.data.annotation.Id;
@@ -16,10 +17,12 @@ import lombok.NoArgsConstructor;
 @Document(collection = "Avis")
 public class Avis {
 	@Id
+	
 	private String idAvis ;
 	private String avis ; 
-	private Date dateAvis ; 
+	private LocalDate dateAvis ; 
 	@DBRef
 	private Client client;
+	
 
 }

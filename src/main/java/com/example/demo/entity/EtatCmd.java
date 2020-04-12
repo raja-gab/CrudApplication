@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import lombok.Data;
 
 @Data
-@Document(collation = "EtatCmd")
+@Document(collection = "EtatCmd")
 public class EtatCmd {
 	
 	@Id
