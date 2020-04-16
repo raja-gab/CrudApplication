@@ -13,7 +13,6 @@ import lombok.Data;
 public class Article {
 	@Id 
 	private String idArt;
-	private String imageName ;
 	private String designtationArt;
 	private String descriptionArt;
 	private  double prixArt;
@@ -28,6 +27,7 @@ public class Article {
 	private Fournisseur fournisseurArt;
 	@DBRef
 	private Avis avisArt ; 
-
+	@DBRef
+	private ImageModel imageModel ;
 	
 }
