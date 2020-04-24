@@ -10,8 +10,8 @@ import lombok.Data;
 public class Fournisseur extends Utilisateur {
 	
 
-	private String adresseFour; 
-	private String	numTelFour; 
+	private String adresse; 
+	private String	phoneNumber; 
 	
 
 }

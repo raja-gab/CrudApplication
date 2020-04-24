@@ -21,7 +21,7 @@ public class Reclamation {
 	private String idRec;
 	private String reclamation ; 
 	private LocalDate dateRec;
-	@DBRef
+	
 	private Commande commandeRec;
 
 }

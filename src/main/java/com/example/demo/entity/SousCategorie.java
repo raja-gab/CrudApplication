@@ -16,6 +16,9 @@ public class SousCategorie {
 	private String idSousCat;
 	private String libelleSousCat;
 	private List <String> valeur ; 
-	@DBRef
+	
 	private Categorie categorie ; 
+	
+	
+	
 }

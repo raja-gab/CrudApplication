@@ -19,15 +19,15 @@ public class Article {
 	private int qteStockArt;
 	private double tauxRemiseArt;
 					
-	@DBRef
+	
 	private Marque marqueArt;
-	@DBRef
+	
 	private SousCategorie sousCategorieArt;
-	@DBRef
+	
 	private Fournisseur fournisseurArt;
-	@DBRef
+	
 	private Avis avisArt ; 
-	@DBRef
+	
 	private ImageModel imageModel ;
 	
 }

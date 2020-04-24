@@ -15,7 +15,7 @@ public class LigneCommande {
 	@Id
 	private String idLC;
 	private int qteArtLC ;
-	@DBRef
+	
 	private Article article ;
 
 }

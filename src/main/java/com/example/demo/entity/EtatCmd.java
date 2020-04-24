@@ -13,7 +13,7 @@ public class EtatCmd {
 	@Id
 	private String idEtat; 
 	private String descEtat; 
-	@DBRef
+	
 	private Commande commande;
 	
 

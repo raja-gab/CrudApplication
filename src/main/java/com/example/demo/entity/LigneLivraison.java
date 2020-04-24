@@ -15,7 +15,7 @@ public class LigneLivraison {
 	@Id
 	private String idEL ;
 	private Date dateLiv;
-	@DBRef
+	
 	private Livraison livraison;
 
 }

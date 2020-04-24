@@ -18,11 +18,11 @@ public class Commande {
 	private Date dateCmd; 
 	private double totalCmd; 
 	private String modePaiement;
-	@DBRef
+	
 	private LigneCommande ligneCmd ; 
-	@DBRef
+	
 	private Client clientCmd;
-	@DBRef
+	
 	private LigneLivraison ligneLivraisonCmd;
 
 }

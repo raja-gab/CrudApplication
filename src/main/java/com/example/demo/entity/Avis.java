@@ -21,7 +21,7 @@ public class Avis {
 	private String idAvis ;
 	private String avis ; 
 	private LocalDate dateAvis ; 
-	@DBRef
+	
 	private Client client;
 	
 

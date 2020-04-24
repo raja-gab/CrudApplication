@@ -9,7 +9,7 @@ import lombok.Data;
 @Document(collection ="Utilisateur" )
 public class Utilisateur {
 	@Id
-	private String login; 
+	private String username; 
 	private String password ; 
 	private String nom;
 	private String prenom;

@@ -19,7 +19,7 @@ public class Facture {
 	private double remiseFact; 
 	private double totalTva; 
 	private double totalTtc; 
-	@DBRef
+	
 	private Commande commandeLiv;
 	
 	
