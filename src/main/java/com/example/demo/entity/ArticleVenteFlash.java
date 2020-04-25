@@ -11,7 +11,7 @@ import lombok.Data;
 @Document(collection = "ArticleVenteFlash")
 public class ArticleVenteFlash extends Article {
 	
-	private  double prixArt;
+	private  double prixArtVF;
 	private int qteStockArtVF;
 	
 
