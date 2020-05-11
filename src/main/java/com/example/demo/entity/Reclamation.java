@@ -18,10 +18,19 @@ import lombok.NoArgsConstructor;
 public class Reclamation {
 	
 	@Id
-	private String idRec;
+    private String id;
+    private String mat;
 	private String reclamation ; 
 	private LocalDate dateRec;
 	
 	private Commande commandeRec;
+	
+	 public String getId() {
+	        return this.mat;
+	    }
+	    public void setMat(String mat) {
+	        
+	        this.mat=this.id;
+	    }
 
 }

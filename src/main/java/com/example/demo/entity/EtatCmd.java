@@ -11,10 +11,17 @@ import lombok.Data;
 public class EtatCmd {
 	
 	@Id
-	private String idEtat; 
+    private String id;
+    private String mat; 
 	private String descEtat; 
 	
 	private Commande commande;
 	
-
+	 public String getId() {
+	        return this.mat;
+	    }
+	    public void setMat(String mat) {
+	        
+	        this.mat=this.id;
+	    }
 }

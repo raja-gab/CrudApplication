@@ -15,8 +15,8 @@ import lombok.NoArgsConstructor;
 public class Client extends Utilisateur {
 	
 
-	private String cinCli; 
-	private String adresseCli;
-	private String numTelCli;
+	private String cin; 
+	private String address;
+	private String phoneNumber;
 
 }

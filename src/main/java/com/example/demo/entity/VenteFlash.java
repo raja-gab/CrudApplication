@@ -1,11 +1,12 @@
 package com.example.demo.entity;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
-
 import lombok.Data;
 
 @Data
@@ -13,12 +14,20 @@ import lombok.Data;
 public class VenteFlash {
 	
 	@Id
-	private String idVF;
+    private String id;
+    private String mat;
 	private LocalDateTime dateDebVF;
 	private LocalDateTime dateFinVF;
-	
-	private List<ArticleVenteFlash> articleVenteFlash;
-	
-	
 
+	
+	 private List<ArticleVenteFlash> articleVenteFlash;
+	 
+	 public String getId() {
+	        return this.mat;
+	    }
+	    public void setMat(String mat) {
+	        
+	        this.mat=this.id;
+	    }
+	
 }

@@ -11,9 +11,9 @@ import lombok.Data;
 @Data
 @Document(collection = "Facture")
 public class Facture {
-	
 	@Id
-	private String idFcat; 
+    private String id;
+    private String mat; 
 	private Date dateFact; 
 	private double tva;
 	private double remiseFact; 
@@ -22,6 +22,13 @@ public class Facture {
 	
 	private Commande commandeLiv;
 	
+	public String getId() {
+        return this.mat;
+    }
+    public void setMat(String mat) {
+        
+        this.mat=this.id;
+    }
 	
 
 }

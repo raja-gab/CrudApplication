@@ -10,6 +10,7 @@ import com.example.demo.entity.Categorie;
 
 
 @RepositoryRestResource(collectionResourceRel = "Categories", path = "categorie")
+
 public interface CategorieRepository extends MongoRepository<Categorie, String> {
 
 }

@@ -10,6 +10,15 @@ import lombok.Data;
 public class Livraison {
 	
 	@Id
-	private String idLiv;
+    private String id;
+    private String mat;
 	private String modeLiv ; 
+	
+	public String getId() {
+        return this.mat;
+    }
+    public void setMat(String mat) {
+        
+        this.mat=this.id;
+    }
 }

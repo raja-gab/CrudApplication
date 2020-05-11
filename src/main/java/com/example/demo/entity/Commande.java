@@ -13,8 +13,9 @@ import lombok.Data;
 @Document(collection  = "Commande")
 public class Commande {
 	
-	@Id
-	private String idCmd; 
+	 @Id
+	 private String id;
+	private String mat;
 	private Date dateCmd; 
 	private double totalCmd; 
 	private String modePaiement;
@@ -24,5 +25,16 @@ public class Commande {
 	private Client clientCmd;
 	
 	private LigneLivraison ligneLivraisonCmd;
+	
+	  
+    public String getId() {
+        return this.mat;
+    }
+    public void setMat(String mat) {
+        
+        this.mat=this.id;
+    }
 
+
+	
 }

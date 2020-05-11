@@ -13,9 +13,18 @@ import lombok.Data;
 public class LigneLivraison {
 	
 	@Id
-	private String idEL ;
+    private String id;
+    private String mat;
 	private Date dateLiv;
 	
 	private Livraison livraison;
+	
+	public String getId() {
+        return this.mat;
+    }
+    public void setMat(String mat) {
+        
+        this.mat=this.id;
+    }
 
 }

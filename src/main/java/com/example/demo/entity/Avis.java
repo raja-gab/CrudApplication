@@ -17,12 +17,20 @@ import lombok.NoArgsConstructor;
 @Document(collection = "Avis")
 public class Avis {
 	@Id
-	
-	private String idAvis ;
+    private String id;
+    private String mat;
 	private String avis ; 
 	private LocalDate dateAvis ; 
 	
 	private Client client;
+	
+	public String getId() {
+	        return this.mat;
+	    }
+	    public void setMat(String mat) {
+	        
+	        this.mat=this.id;
+	    }
 	
 
 }

@@ -11,14 +11,16 @@ import lombok.Data;
 @Data
 @Document(collection  = "Article")
 public class Article {
-	@Id 
-	private String idArt;
+	@Id
+    private String id;
+    private String mat;
 	private String designtationArt;
 	private String descriptionArt;
 	private  double prixArt;
 	private int qteStockArt;
 	private double tauxRemiseArt;
-					
+				
+	
 	
 	private Marque marqueArt;
 	
@@ -28,6 +30,15 @@ public class Article {
 	
 	private Avis avisArt ; 
 	
+
 	private ImageModel imageModel ;
+	
+	public String getId() {
+        return this.mat;
+    }
+    public void setMat(String mat) {
+        
+        this.mat=this.id;
+    }
 	
 }

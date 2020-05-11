@@ -13,9 +13,17 @@ import lombok.Data;
 public class LigneCommande {
 	
 	@Id
-	private String idLC;
+    private String id;
+    private String mat;
 	private int qteArtLC ;
 	
 	private Article article ;
+	public String getId() {
+        return this.mat;
+    }
+    public void setMat(String mat) {
+        
+        this.mat=this.id;
+    }
 
 }

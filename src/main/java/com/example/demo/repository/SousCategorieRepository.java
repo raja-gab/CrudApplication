@@ -5,7 +5,8 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import com.example.demo.entity.SousCategorie;
 
-@RepositoryRestResource(collectionResourceRel = "SousCathegories", path = "souscategorie")
+ @RepositoryRestResource(collectionResourceRel = "SousCathegories", path = "souscategorie")
+
 public interface SousCategorieRepository extends MongoRepository<SousCategorie, String> {
 
 }
