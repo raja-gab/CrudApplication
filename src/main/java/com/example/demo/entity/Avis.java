@@ -1,6 +1,7 @@
 package com.example.demo.entity;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 import org.springframework.data.annotation.Id;
@@ -20,7 +21,7 @@ public class Avis {
     private String id;
     private String mat;
 	private String avis ; 
-	private LocalDate dateAvis ; 
+	private LocalDateTime dateAvis ; 
 	
 	private Client client;
 	
