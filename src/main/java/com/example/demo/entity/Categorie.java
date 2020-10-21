@@ -17,15 +17,15 @@ import lombok.NoArgsConstructor;
 
 public class Categorie {
 	@Id
-    private String id;
+    private String idCat;
 	 private String mat;
 	private String libelleCat;
 
-	public String getId() {
+	public String getIdCat() {
         return this.mat;
     }
     public void setMat(String mat) {
         
-        this.mat=this.id;
+        this.mat=this.idCat;
     }
 }

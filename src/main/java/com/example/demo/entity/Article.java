@@ -30,8 +30,8 @@ public class Article {
 	
 	private Avis avisArt ; 
 	
-
-	private ImageModel imageModel ;
+	private String imageName; 
+	//private ImageModel imageModel ;
 	
 	public String getId() {
         return this.mat;

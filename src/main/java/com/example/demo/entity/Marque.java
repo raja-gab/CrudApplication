@@ -9,15 +9,15 @@ import lombok.Data;
 @Document(collection = "Marque")
 public class Marque {
 	@Id
-    private String id;
+    private String idMarq;
     private String mat;
 	private String libelleMarq;
 	
-	 public String getId() {
+	 public String getIdMarq() {
 	        return this.mat;
 	    }
 	    public void setMat(String mat) {
 	        
-	        this.mat=this.id;
+	        this.mat=this.idMarq;
 	    }
 }
